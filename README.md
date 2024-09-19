@@ -1,22 +1,3 @@
-                         
-<br/>
-<div align="center">
-<a href="https://github.com/Mahboob-A/Movio/">
-<img src="https://github.com/user-attachments/assets/e2ab9eff-401e-4951-8474-986981881842" alt="Logo" width="700" height="400">
-</a>
-<h3 align="center">Movio - A Scalable Video On Demand Platform in Microservices</h3>
-<p align="center">
-Movio is a VOD Platform Backend Solution Just Like Netflix!
-<br/>
-<br/>
-<a href="https://github.com/Mahboob-A/Movio/"><strong>Read the blog »</strong></a>
-<br/>
-<br/>
-<a href="https://github.com/Mahboob-A/Movio-Auth-Service/">Movio Auth Service .</a>  
-<a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service .</a>
-<a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio Worker Service</a>
-</p>
-</div>
 <h3 align="center">General Information </h3>
 
 **Movio** is a _**High Performance**_ video streaming platform just like <a href="https://www.netflix.com/in/">_Netflix_</a> built in __Microservices__ Architecture. A viewer can signup in _Movio_ and watch their favorite videos as well as upload their video for others to watch. 
@@ -58,4 +39,10 @@ Movio is a VOD Platform Backend Solution Just Like Netflix!
 **B. Documentation**
 
 > Please visit the documentation page `localhost:{{NGINX HOST PORT}}/doc/` for more information related to API documentation. 
+> 
+
+**C. Progress**
+
+> I started to build the project on 09/09/24, and today is 190924. It's been 10 days since I was building the project in microservices. I have learnt a lot during the stay. 
+> I am constantly updating the ReadME, you may see different versions of Readme!
 > 
