@@ -23,6 +23,17 @@ Movio is a VOD Platform Backend Solution Just Like Netflix!
 
 **Movio** is primarily tries to mimic the core backend of any established _VoD_ platforms, such as **Netflix**, **YouTube**. The backend of **Movio**  is built on `Django`.
 
+**Please see the respective service for code review**
+
+_**NOTE**: Currently I am updating the readme of  this central repository. The Readme update for each service might be delayed. This central repository will share the high level understanding of the **Movio Platform**. You are encourage to read throughly the **Movio Overall Workflow** Section below for high level understanding of **Movio Platform**._
+ 
+
+**Movio Auth Service**: <a href="https://github.com/Mahboob-A/Movio-Auth-Service/">Movio Auth Service </a>  
+
+**Movio API Service**: <a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service </a>
+
+**Movio Worker Service**: <a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio Worker Service .</a>
+
 **The _Movio_ platform is backed by the following core technologies** - 
 
     a. Django - The Backend
@@ -287,6 +298,36 @@ the `cleanup local files` task only execute when all the uploading tasks are com
 
 * This task clears all the processed data from local storage such as `Subtitle file`, `.MKV` and `.MP4` file and the local `DASH Segments`. 
  
+<br/> <br/>
+
+</details>
+
+<details>
+<summary><h1 align="center">Architecture of Movio  |  HLD </h1></summary>
+
+
+## Architecture of Movio 
+
+### Architecture of  <a href="https://github.com/Mahboob-A/Movio-Auth-Service/">Movio Auth Service </a>
+
+  
+
+
+![movio-auth-service-hld](https://github.com/user-attachments/assets/4354472a-78f8-4365-a3c5-1df6cf4a2982)
+
+
+
+### Architecture of  <a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service </a>
+
+![movio-api-service-hld](https://github.com/user-attachments/assets/8888cc08-1f82-4970-9b76-65d7d3b990ed)
+
+
+### Architecture of  <a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio Worker Service</a>
+
+_**NOTE**_: <a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio Worker Service</a> is only accessible through `Message Queue` Events. The `Nginx Container` in <a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio Worker Service</a> is only for `Healthcheck` and for `Admin Portal`.  
+
+![movio-worker-service-hld](https://github.com/user-attachments/assets/b9d41bf6-8c0f-4c75-bc35-f983c870d6de)
+
 <br/> <br/>
 
 </details>
