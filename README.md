@@ -94,6 +94,11 @@ _**NOTE**: Currently I am updating the readme of  this central repository. The R
 
 ## Overall Workflow of Movio 
 
+<br/>
+
+_**NOTE:** Postman APIs Exports are available here: <a href="https://github.com/Mahboob-A/Movio-API-Service/tree/main/src/postman-apis/">Postman APIs Exports </a>_
+
+<br/>
 
 ### Workflow of <a href="https://github.com/Mahboob-A/Movio-Auth-Service/">Movio Auth Service </a>  
 
