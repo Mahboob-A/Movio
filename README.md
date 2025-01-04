@@ -9,7 +9,7 @@
 Movio is a VOD Platform Backend Solution Just Like Netflix!
 <br/>
 <p align="center">
-  Monolith version of Movio is CuteTube. Check it <a href="https://github.com/Mahboob-A/cutetube/" target="_blank"><strong>here »</strong></a>
+  Monolith version of Movio is CuteTube. Check it <a href="https://github.com/Mahboob-A/cutetube/" target="_blank" rel="noopener noreferrer"><strong>here »</strong></a>
   </p>
 <br/>
 <a href="https://github.com/Mahboob-A/Movio/" target="_blank"><strong>Read the blog »</strong></a>
