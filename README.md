@@ -8,18 +8,21 @@
 <p align="center">
 Movio is a VOD Platform Backend Solution Just Like Netflix!
 <br/>
+<p align="center">
+  Monolith version of Movio is CuteTube. Check it <a href="https://github.com/Mahboob-A/cutetube/" target="_blank"><strong>here »</strong></a>
+  </p>
 <br/>
-<a href="https://github.com/Mahboob-A/Movio/"><strong>Read the blog »</strong></a>
+<a href="https://github.com/Mahboob-A/Movio/" target="_blank"><strong>Read the blog »</strong></a>
 <br/>
 <br/>
-<a href="https://github.com/Mahboob-A/Movio-Auth-Service/">Movio Auth Service .</a>  
-<a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service .</a>
-<a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio Worker Service</a>
+<a href="https://github.com/Mahboob-A/Movio-Auth-Service/" target="_blank">Movio Auth Service .</a>  
+<a href="https://github.com/Mahboob-A/Movio-API-Service/" target="_blank">Movio API Service .</a>
+<a href="https://github.com/Mahboob-A/Movio-Worker-Service/" target="_blank">Movio Worker Service</a>
 </p>
 </div>
 <h3 align="center">General Information </h3>
 
-**Movio** is a _**High Performance**_ video streaming platform just like <a href="https://www.netflix.com/in/">_Netflix_</a> built in __Microservices__ Architecture. A viewer can signup in _Movio_ and watch their favorite videos as well as upload their video for others to watch. 
+**Movio** is a _**High Performance**_ video streaming platform just like <a href="https://www.netflix.com/in/" target="_blank">_Netflix_</a> built in __Microservices__ Architecture. A viewer can signup in _Movio_ and watch their favorite videos as well as upload their video for others to watch. 
 
 **Movio** is primarily tries to mimic the core backend of any established _VoD_ platforms, such as **Netflix**, **YouTube**. The backend of **Movio**  is built on `Django`.
 
@@ -28,11 +31,11 @@ Movio is a VOD Platform Backend Solution Just Like Netflix!
 _**NOTE**: Currently I am updating the readme of  this central repository. The Readme update for each service might be delayed. This central repository will share the high level understanding of the **Movio Platform**. You are encourage to read throughly the **Movio Overall Workflow** Section below for high level understanding of **Movio Platform**._
  
 
-**Movio Auth Service**: <a href="https://github.com/Mahboob-A/Movio-Auth-Service/">Movio Auth Service </a>  
+**Movio Auth Service**: <a href="https://github.com/Mahboob-A/Movio-Auth-Service/" target="_blank">Movio Auth Service </a>  
 
-**Movio API Service**: <a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service </a>
+**Movio API Service**: <a href="https://github.com/Mahboob-A/Movio-API-Service/" target="_blank">Movio API Service </a>
 
-**Movio Worker Service**: <a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio Worker Service .</a>
+**Movio Worker Service**: <a href="https://github.com/Mahboob-A/Movio-Worker-Service/" target="_blank">Movio Worker Service .</a>
 
 **The _Movio_ platform is backed by the following core technologies** - 
 
@@ -96,7 +99,7 @@ _**NOTE**: Currently I am updating the readme of  this central repository. The R
 
 <br/>
 
-_**NOTE:** Postman APIs Exports are available here: <a href="https://github.com/Mahboob-A/Movio-API-Service/tree/main/src/postman-apis/">Postman APIs Exports </a>_
+_**NOTE:** Postman APIs Exports are available here: <a href="https://github.com/Mahboob-A/Movio-API-Service/tree/main/src/postman-apis/" target="_blank">Postman APIs Exports </a>_
 
 <br/>
 
@@ -111,9 +114,9 @@ _**NOTE:** Postman APIs Exports are available here: <a href="https://github.com/
 
 ### Workflow of <a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service </a> 
 
-The <a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service </a> service is exposed to public access along with the <a href="https://github.com/Mahboob-A/Movio-Auth-Service/">Movio Auth Service </a> . Users can interact with  <a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service </a>  for video processing and requesting the video metadata. The service `Produces RabbitMQ` events that would be consumed by <a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio Worker Service </a> and the service also `Consumes RabbitMQ` events that are produced by <a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio WorkerService </a>. 
+The <a href="https://github.com/Mahboob-A/Movio-API-Service/" target="_blank">Movio API Service </a> service is exposed to public access along with the <a href="https://github.com/Mahboob-A/Movio-Auth-Service/" target="_blank">Movio Auth Service </a> . Users can interact with  <a href="https://github.com/Mahboob-A/Movio-API-Service/" target="_blank">Movio API Service </a>  for video processing and requesting the video metadata. The service `Produces RabbitMQ` events that would be consumed by <a href="https://github.com/Mahboob-A/Movio-Worker-Service/" target="_blank">Movio Worker Service </a> and the service also `Consumes RabbitMQ` events that are produced by <a href="https://github.com/Mahboob-A/Movio-Worker-Service/" target="_blank">Movio WorkerService </a>. 
 
-Once <a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service </a> consumes a message that is produced by <a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio Worker Service </a>, it updates the `status of the video processing` in the database. As an extension, I am planning to sending `Whatsapp Message and Email` to the user at this time to inform the User about the successful video process result.  
+Once <a href="https://github.com/Mahboob-A/Movio-API-Service/" target="_blank">Movio API Service </a> consumes a message that is produced by <a href="https://github.com/Mahboob-A/Movio-Worker-Service/" target="_blank">Movio Worker Service </a>, it updates the `status of the video processing` in the database. As an extension, I am planning to sending `Whatsapp Message and Email` to the user at this time to inform the User about the successful video process result.  
 
 **NOTE:**  _See API Documentation Below for Full API Params and Information._
 
@@ -124,7 +127,7 @@ _**TL;DR;**_
 * User send a `video file` along with  `title`, `duration`, and `description`. 
 * The video is offloaded to `celery worker`. 
 * The celery worker uploads the video to `S3 Bucket`, deletes the local file and creates a `RabbitMQ Event` with some data. 
-* This  message is consumed by  <a href="https://github.com/Mahboob-A/Movio-WOrker-Service/">Movio Worker Service </a> to process the video. 
+* This  message is consumed by  <a href="https://github.com/Mahboob-A/Movio-WOrker-Service/" target="_blank">Movio Worker Service </a> to process the video. 
 
  **Stream API:**
 
@@ -151,11 +154,11 @@ User can search a video by the below properties:
 
  **APP: Event Manager**
 
-* `event_manager` is the app that is responsible to communicate with the cloud `RabbitMQ` instance  <a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service </a> is using to communicate with  <a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio Worker Service </a>. 
+* `event_manager` is the app that is responsible to communicate with the cloud `RabbitMQ` instance  <a href="https://github.com/Mahboob-A/Movio-API-Service/" target="_blank">Movio API Service </a> is using to communicate with  <a href="https://github.com/Mahboob-A/Movio-Worker-Service/" target="_blank">Movio Worker Service </a>. 
 
 * The `event_manager` app consists of a `Django Management Command` that runs on different process to listen to the events of the Movio Inter Services. 
 
-* It produces messages  to be consumed by  <a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio Worker Service </a> and it also listens to the messages that are produced by  <a href="https://github.com/Mahboob-A/Movio-WOrker-Service/">Movio Worker Service </a>. 
+* It produces messages  to be consumed by  <a href="https://github.com/Mahboob-A/Movio-Worker-Service/" target="_blank">Movio Worker Service </a> and it also listens to the messages that are produced by  <a href="https://github.com/Mahboob-A/Movio-WOrker-Service/" target="_blank">Movio Worker Service </a>. 
 
 * `Video Submission API` - `/api/v1/app/events/video-upload/` -> API that offloads the video processing to the `celery worker`.  
 
@@ -184,9 +187,9 @@ User can search a video by the below properties:
 
 ### Workflow of <a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio Worker Service </a> 
 
-The <a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio Worker Service </a> is the heart of the Movio Platform. The service, just like the <a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service </a>, runs an additional `Process` `(Django Management Command)` to listen to the `RabbitMQ` events that are produced by <a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service </a>. The service also produces message after it finishes the video processing and that message is consumed by the <a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service </a>. 
+The <a href="https://github.com/Mahboob-A/Movio-Worker-Service/" target="_blank">Movio Worker Service </a> is the heart of the Movio Platform. The service, just like the <a href="https://github.com/Mahboob-A/Movio-API-Service/" target="_blank">Movio API Service </a>, runs an additional `Process` `(Django Management Command)` to listen to the `RabbitMQ` events that are produced by <a href="https://github.com/Mahboob-A/Movio-API-Service/" target="_blank">Movio API Service </a>. The service also produces message after it finishes the video processing and that message is consumed by the <a href="https://github.com/Mahboob-A/Movio-API-Service/" target="_blank">Movio API Service </a>. 
 
-Once the <a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio Worker Service </a> consumes a message produced by <a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service </a>, a robust `Celery Pipeline` is activated. 
+Once the <a href="https://github.com/Mahboob-A/Movio-Worker-Service/" target="_blank">Movio Worker Service </a> consumes a message produced by <a href="https://github.com/Mahboob-A/Movio-API-Service/" target="_blank">Movio API Service </a>, a robust `Celery Pipeline` is activated. 
 
 **Below, I am mentioning all the Celery tasks that are included in this Pipeline**.
 
@@ -194,7 +197,7 @@ Once the <a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio Work
 
 #### Task 01: Download Video From S3 
 
-* This is the very first task in the pipeline. It downloads the video that was submitted by the user (which was uploaded to S3 by <a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service </a>). 
+* This is the very first task in the pipeline. It downloads the video that was submitted by the user (which was uploaded to S3 by <a href="https://github.com/Mahboob-A/Movio-API-Service/" target="_blank">Movio API Service </a>). 
 
  
 #### Task 02: Delete Video From S3 
@@ -295,7 +298,7 @@ the `cleanup local files` task only execute when all the uploading tasks are com
 
 * This task is the first task in the previous `callback chain`. 
 
-* It produces message for the  <a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service </a> with additional video metadata information so that the <a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service </a> may update the database. 
+* It produces message for the  <a href="https://github.com/Mahboob-A/Movio-API-Service/" target="_blank">Movio API Service </a> with additional video metadata information so that the <a href="https://github.com/Mahboob-A/Movio-API-Service/" target="_blank">Movio API Service </a> may update the database. 
 
 #### Task 10: Cleanup Local Files 
 
@@ -353,7 +356,7 @@ _**NOTE**_: <a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio W
 * The `MPEG-DASH` Segments are being served through a `CDN` (Gcore CDN)
 > The `CDN URL` is `movio-cdn.algocode.site`. 
 > 
->> I am using my old domain I purchased for my another project - <a href="https://github.com/Mahboob-A/algocode/">Algocode</a>. This is a microservices backend solution of `Online Judge` just like `Leetcode`. No other `3rd Party APIs` has been used. User passes code in `C++`, and the  `RCE Enginer` executes the code in a secure docker container and generates results such as `AC`, `WA`, `TLE` etc. To learn more about `Algocode`, please visit  <a href="https://github.com/Mahboob-A/algocode/">Algocode</a> here. 
+>> I am using my old domain I purchased for my another project - <a href="https://github.com/Mahboob-A/algocode/" target="_blank">Algocode</a>. This is a microservices backend solution of `Online Judge` just like `Leetcode`. No other `3rd Party APIs` has been used. User passes code in `C++`, and the  `RCE Enginer` executes the code in a secure docker container and generates results such as `AC`, `WA`, `TLE` etc. To learn more about `Algocode`, please visit  <a href="https://github.com/Mahboob-A/algocode/" target="_blank">Algocode</a> here. 
 
 ![segments-served-from-cdn](https://github.com/user-attachments/assets/18f3760b-cea9-4b4f-9fda-515e66ab0076)
 
@@ -402,9 +405,9 @@ _**NOTE**_: <a href="https://github.com/Mahboob-A/Movio-Worker-Service/">Movio W
 
 * As all the segments are uploaded in `S3 Bucket`, and I have already set up Gcore CDN in order to serve the `DASH `Segments`, you only need to run a `html` page which has a `dash player` in it. 
 
-* Please copy this already available `dash player` from the  <a href="https://github.com/Mahboob-A/Movio-API-Service/">Movio API Service </a>, and run it with the `Live Server`, and you will be able to see the video with `subtitle!`
+* Please copy this already available `dash player` from the  <a href="https://github.com/Mahboob-A/Movio-API-Service/" target="_blank">Movio API Service </a>, and run it with the `Live Server`, and you will be able to see the video with `subtitle!`
 
-* Please <a href="https://github.com/Mahboob-A/Movio-API-Service/blob/main/src/html-templates/dash-plyaer-current.html/">COPY THIS HTML FILE </a> , and put the `long video` or `short video` `CDN URL` in the `url` variable, and depending upon the long or short video URL, the video will be played. 
+* Please <a href="https://github.com/Mahboob-A/Movio-API-Service/blob/main/src/html-templates/dash-plyaer-current.html/" target="_blank">COPY THIS HTML FILE </a> , and put the `long video` or `short video` `CDN URL` in the `url` variable, and depending upon the long or short video URL, the video will be played. 
 
 * **If you want to setup local development, you need a few AWS credentials as well as RabbitMQ Credential, Gcore CDN Credential, CloudFlare DNS** 
 
