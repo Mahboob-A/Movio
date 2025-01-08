@@ -11,7 +11,9 @@ Movio is a VOD Platform Backend Solution Just Like Netflix!
 <p align="center">
   The Monolith version of Movio is CuteTube. Check it <a href="https://github.com/Mahboob-A/cutetube/" target="_blank" rel="noopener noreferrer"><strong>here »</strong></a>
   </p>
-<br/>
+  <p style="text-align: center;">
+  The Live Stream version of Movio is ProStream. Check it <a href="https://github.com/Mahboob-A/prostream" target="_blank"><strong>here »</strong></a>
+</p>
 <a href="https://github.com/Mahboob-A/Movio/" target="_blank"><strong>Read the blog »</strong></a>
 <br/>
 <br/>
