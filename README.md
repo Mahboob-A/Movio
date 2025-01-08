@@ -14,7 +14,7 @@ Movio is a VOD Platform Backend Solution Just Like Netflix!
   <p style="text-align: center;">
   The Live Stream version of Movio is ProStream. Check it <a href="https://github.com/Mahboob-A/prostream" target="_blank"><strong>here »</strong></a>
 </p>
-<a href="https://github.com/Mahboob-A/Movio/" target="_blank"><strong>Read the blog »</strong></a>
+<a href="https://imehboob.medium.com/my-experience-building-a-leetcode-like-online-judge-and-how-you-can-build-one-7e05e031455d"  target="_"><strong>Read the blog »</strong></a>
 <br/>
 <br/>
 <a href="https://github.com/Mahboob-A/Movio-Auth-Service/" target="_blank">Movio Auth Service .</a>  
